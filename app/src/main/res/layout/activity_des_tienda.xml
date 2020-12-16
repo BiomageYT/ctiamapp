@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        tools:context=".veterinary.dashboardFragment"
+        android:orientation="vertical">
+
+
+
+        <AutoCompleteTextView
+            android:id="@+id/query"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="363dp"
+            android:layout_marginLeft="12px"
+            android:layout_marginRight="12px">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/Primario"
+
+                    android:text="COMIDAS RAPIDAS DOÑA IRMA"
+                    android:textAlignment="center"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="319dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/tienda"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/whatsapptienda"
+                        android:layout_width="50dp"
+                        android:layout_height="58dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/icwp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#E0F7FA">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/Primario"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:text="MÁS PRODUCTOS"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/banda"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Media -->
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="230dp"
+                    android:layout_marginBottom="100dp"
+                    android:columnCount="2"
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp"
+                        android:textStyle="bold">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="103dp"
+                                android:layout_margin="10dp"
+                                app:srcCompat="@drawable/ropamujer" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="147dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Vestido Rojo"
+                                android:textAlignment="center"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="@color/Negrito"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Ver más"
+                            android:textColor="@color/Primario"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="160dp"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18dp"
+                        android:textStyle="bold">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="103dp"
+                                android:layout_margin="10dp"
+                                app:srcCompat="@drawable/viveres" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="144dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Combo"
+                                android:textAlignment="center"
+                                android:textAppearance="?attr/textAppearanceBody2"
+                                android:textColor="@color/Negrito"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="37dp"
+                            android:text="Ver más"
+                            android:textColor="@color/Primario"/>
+
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

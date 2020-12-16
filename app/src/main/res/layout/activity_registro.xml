@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondoregistro"
+    >
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="450dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txtEmail"
+        app:hintTextColor="@color/white"
+        app:placeholderTextColor="@color/white"
+        app:helperTextTextColor="@color/white"
+        app:counterOverflowTextColor="@color/white"
+        app:counterTextColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
+        app:errorTextColor="@color/white"
+        app:prefixTextColor="@color/white"
+        app:suffixTextColor="@color/white"
+        android:textColorHint="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nuevoemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/account_box_black_18dp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/txtClave"
+        app:hintTextColor="@color/white"
+        app:placeholderTextColor="@color/white"
+        app:helperTextTextColor="@color/white"
+        app:counterOverflowTextColor="@color/white"
+        app:counterTextColor="@color/white"
+        android:outlineAmbientShadowColor="@color/white"
+        android:outlineSpotShadowColor="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:boxStrokeErrorColor="@color/white"
+        app:errorTextColor="@color/white"
+        app:prefixTextColor="@color/white"
+        app:suffixTextColor="@color/white"
+        android:textColorHint="@color/white"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text"
+
+
+        >
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/nuevaclave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/forward_black_18dp"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:text="@string/txtBotonRegistro"
+        android:background="@color/white"
+        android:textColor="@color/Primario"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:onClick="inicioSesion"
+        android:text="@string/txtYaTieneCuentaLink"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

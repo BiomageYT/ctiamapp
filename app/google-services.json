@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "133540812806",
+    "firebase_url": "https://ctiam2.firebaseio.com",
+    "project_id": "ctiam2",
+    "storage_bucket": "ctiam2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:133540812806:android:2a1bc37360416f0796cb87",
+        "android_client_info": {
+          "package_name": "com.ufps.ctiam20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "133540812806-744gekgna29mvs170v8nqsksskkm6kfb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5so9DUC-mece8GkX-CcMeXWC2jQDdIjA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "133540812806-744gekgna29mvs170v8nqsksskkm6kfb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

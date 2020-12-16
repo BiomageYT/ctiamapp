@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:background="@color/Secundario">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <!-- Media -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:paddingBottom="0dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/paletadescripcion" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="394dp"
+            android:layout_height="28dp"
+            android:layout_margin="10dp"
+            android:background="@color/Primario"
+            android:text="Auriculares Audifonos JBL"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="PRECIO:  $12.000"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceBody2"
+            android:textColor="@color/Negrito" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingTop="0dp"
+
+
+            >
+
+            <!-- Title, secondary and supporting text -->
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingBottom="20dp"
+                android:text="Descripcion"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="@color/Primario"
+                android:textSize="55px" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="-Son ligeros, cómodos y compactos. Bajo la duradera carcasa del audifono, un par de conductores de 9 mm sacan los mejores graves, reproduciendo el sonido JBL Pure Bass. Además, el control remoto de un botón en un cable plano, libre de enredos te permite controlar el reproductor, así como contestar llamadas con un micrófono incorporado."
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/Negrito"
+
+                />
+
+        </LinearLayout>
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/nestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="307dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <!-- Scrollable content -->
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@color/Secundario">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <!-- Media -->
+
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:background="@color/Primario"
+                android:text="IR A LA WEB"
+                android:textAlignment="center"
+                android:textAppearance="?attr/textAppearanceBody2"
+                android:textColor="@color/white"
+                app:layout_anchor="@+id/nestedScrollView"
+                app:layout_anchorGravity="top|center" />
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>
+</LinearLayout>

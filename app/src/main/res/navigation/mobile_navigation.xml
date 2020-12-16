@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.ufps.ctiam20.ui.productos.ProductosFragment"
+        android:label="Productos"
+        tools:layout="@layout/fragment_productos" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.ufps.ctiam20.ui.categorias.CategoriasFragment"
+        android:label="Categorias"
+        tools:layout="@layout/fragment_categorias" />
+
+    <fragment
+        android:id="@+id/nav_tiendas"
+        android:name="com.ufps.ctiam20.ui.tiendas.TiendasFragment"
+        android:label="Tiendas"
+        tools:layout="@layout/fragment_tiendas" />
+    <fragment
+        android:id="@+id/nav_ubicaciones"
+        android:name="com.ufps.ctiam20.fragment_ubicaciones"
+        android:label="Ubicaciones"
+        tools:layout="@layout/fragment_ubicaciones" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.ufps.ctiam20.ui.perfil.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" />
+</navigation>

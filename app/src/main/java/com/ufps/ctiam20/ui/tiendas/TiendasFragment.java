@@ -82,7 +82,6 @@ public class TiendasFragment extends Fragment {
             json = response.toString();
             JSONArray jsonArr = null;
             jsonArr = new JSONArray(json);
-
             for (int i = 0; i < jsonArr.length(); i++) {
                 JSONObject jsonObject = jsonArr.getJSONObject(i);
                 String id = jsonObject.optString("id");
@@ -94,10 +93,8 @@ public class TiendasFragment extends Fragment {
                 String fotoTienda = jsonObject.optString("imagen");
                 String horarioTienda = jsonObject.optString("horario");
                 String ubicacionTienda = jsonObject.optString("ubicacion");
-                Log.d("Salida", nombreTienda);
-                tiendas.add(new Tienda(id, nombreTienda,descripcionTienda,telefonoTienda,emailTienda,paginawebTienda,fotoTienda,horarioTienda,ubicacionTienda));
-                //Log.d("Salida", jsonObject.optString("documento"));
-                //Log.d("Salida", "perro");
+                    tiendas.add(new Tienda(id, nombreTienda,descripcionTienda,telefonoTienda,emailTienda,paginawebTienda,fotoTienda,horarioTienda,ubicacionTienda));
+
             }
 
 

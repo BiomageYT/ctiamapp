@@ -6,71 +6,119 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.ufps.ctiam20.DesTiendaActivity;
 import com.ufps.ctiam20.R;
+import com.ufps.ctiam20.ui.conbel.ConBelFragment;
+import com.ufps.ctiam20.ui.concom.ConComFragment;
+import com.ufps.ctiam20.ui.conhog.ConHogFragment;
+import com.ufps.ctiam20.ui.conroh.ConRohFragment;
+import com.ufps.ctiam20.ui.conrom.ConRomFragment;
+import com.ufps.ctiam20.ui.contec.ConTecFragment;
+import com.ufps.ctiam20.ui.vr.VrFragment;
 
 public class CategoriasFragment extends Fragment {
 
-    Button categoriatecnologia;
-    Button categoriahogar;
-    Button categoriacomidas;
-    Button categoriadeporte;
-    Button categoriabelleza;
-    Button categoriajuguetes;
-    Button categoriamodahombre;
-    Button categoriamodamujer;
-    Button categoriasupermercado;
-    Button categoriainstrumentos;
+    ImageView imagenTecno;
+    ImageView imagenHogar;
+    ImageView imagenComida;
+    ImageView imagenRopaMujer;
+    ImageView imagenRopaHombre;
+    ImageView imagenBelleza;
 
 
 
- //   private CategoriasViewModel categoriasViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-  //      categoriasViewModel =
-   //             new ViewModelProvider(this).get(CategoriasViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_categorias, container, false);
 
-    //   categoriatecnologia = root.findViewById(R.id.categoriatecnologia);
-    //  categoriahogar = root.findViewById(R.id.categoriahogar);
-   //    categoriacomidas = root.findViewById(R.id.categoriacomidas);
-   //     categoriadeporte = root.findViewById(R.id.categoriadeporte);
-   //     categoriabelleza = root.findViewById(R.id.categoriabelleza);
-  //      categoriajuguetes = root.findViewById(R.id.categoriajuguetes);
-  //      categoriamodahombre = root.findViewById(R.id.categoriamodahombre);
- //       categoriamodamujer = root.findViewById(R.id.categoriamodamujer);
-  //      categoriasupermercado = root.findViewById(R.id.categoriasupermercado);
- //       categoriainstrumentos = root.findViewById(R.id.categoriainstrumentos);
+        View view = inflater.inflate(R.layout.fragment_categorias, container, false);
 
-  //    categoriatecnologia.setText("TECNOLOGIA");
-    //    categoriahogar.setText("HOGAR");
-    //   categoriacomidas.setText("COMIDAS");
-   //     categoriadeporte.setText("DEPORTES");
-   //     categoriabelleza.setText("BELLEZA");
-   //     categoriajuguetes.setText("JUGUETES");
-   //     categoriamodahombre.setText("ROPA HOMBRE");
-   //     categoriamodamujer.setText("ROPA MUJER");
-  //      categoriasupermercado.setText("VIVERES");
-   //     categoriainstrumentos.setText("MUSICA");
+        imagenTecno = view.findViewById(R.id.imagenTecno);
+        imagenHogar = view.findViewById(R.id.imagenHogar);
+        imagenComida = view.findViewById(R.id.imagenComida);
+        imagenRopaMujer = view.findViewById(R.id.imagenRopaMujer);
+        imagenRopaHombre = view.findViewById(R.id.imagenRopaHombre);
+        imagenBelleza = view.findViewById(R.id.imagenBelleza);
 
+        imagenTecno.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
-  //      final TextView textView = root.findViewById(R.id.text_gallery);
-  //      categoriasViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-   //         @Override
-   //         public void onChanged(@Nullable String s) {
-   //            textView.setText(s);
-  //          }
-   //     });
-        return root;
+                Fragment nuevoFragment = new ConTecFragment();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+                transaction.replace(R.id.drawer_layout, nuevoFragment).addToBackStack(null).commit();
+
+            }
+        });
+        imagenHogar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Fragment nuevoFragment = new ConHogFragment();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+                transaction.replace(R.id.drawer_layout, nuevoFragment).addToBackStack(null).commit();
+
+            }
+        });
+        imagenComida.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Fragment nuevoFragment = new ConComFragment();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+                transaction.replace(R.id.drawer_layout, nuevoFragment).addToBackStack(null).commit();
+
+            }
+        });
+        imagenRopaMujer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Fragment nuevoFragment = new ConRomFragment();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+                transaction.replace(R.id.drawer_layout, nuevoFragment).addToBackStack(null).commit();
+
+            }
+        });
+        imagenRopaHombre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Fragment nuevoFragment = new ConRohFragment();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+                transaction.replace(R.id.drawer_layout, nuevoFragment).addToBackStack(null).commit();
+
+            }
+        });
+
+        imagenBelleza.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Fragment nuevoFragment = new ConBelFragment();
+                FragmentTransaction transaction = getActivity().getSupportFragmentManager().beginTransaction();
+
+                transaction.replace(R.id.drawer_layout, nuevoFragment).addToBackStack(null).commit();
+
+            }
+        });
+
+        return view;
     }
 
 }

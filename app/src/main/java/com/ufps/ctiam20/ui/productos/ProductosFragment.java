@@ -104,10 +104,7 @@ public class ProductosFragment extends Fragment {
                 String fechaProducto = jsonObject.optString("fecha");
                 String stockProducto = jsonObject.optString("stock");
                 String imagenProducto = jsonObject.optString("imagen");
-                Log.d("Salida",tituloProducto );
                 productos.add(new Producto(id, idTienda, idCategoria,idMarca,idEstado,tituloProducto,descripcionProducto,detalleProducto,precioProducto,fechaProducto,stockProducto,imagenProducto));
-                //Log.d("Salida", jsonObject.optString("documento"));
-                //Log.d("Salida", "perro");
             }
 
 

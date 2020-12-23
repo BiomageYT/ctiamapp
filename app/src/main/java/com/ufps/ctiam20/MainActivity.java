@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void olvidoClave(View view){
-        Intent intent = new Intent (this,DesTiendaActivity.class);
+        Intent intent = new Intent (this,DesProductoActivity.class);
         startActivity(intent);
 
 
